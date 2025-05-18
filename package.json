@@ -9,7 +9,8 @@
     "backend": "cd backend && npm start",
     "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
     "bot": "node backend/bot.js",
-    "build": "cd frontend && npm run build"
+    "build": "cd frontend && npm install && npm run build",
+    "vercel-build": "cd frontend && npm install && npm run build"
   },
   "keywords": [
     "telegram",
