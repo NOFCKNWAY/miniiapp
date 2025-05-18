@@ -1,0 +1,31 @@
+{
+  "name": "telegram-mini-app",
+  "version": "1.0.0",
+  "description": "Telegram Mini App with bot integration",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "frontend": "cd frontend && npm start",
+    "backend": "cd backend && npm start",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "bot": "node backend/bot.js",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "mini-app",
+    "react"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2",
+    "node-telegram-bot-api": "^0.64.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
